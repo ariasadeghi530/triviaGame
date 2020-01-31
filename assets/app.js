@@ -60,13 +60,14 @@ function renderQuestions(question, choices) {
   let questionDiv = document.createElement('div');
   question.class = "card"
   questionDiv.innerHTML = `
-  <h5 class="card-title">${question}</h5>
+  <h5 class="card-header">${question}</h5>
+  <div class="card-body">
   <div>
     <button type="button" class="btn btn-light btn-lg btn-block btn-light text-left">
     ${choices[0]}
     </button>
   </div>
-  <div>
+  <div >
     <button type="button" class="btn btn-primary btn-lg btn-block btn-light text-left">
     ${choices[1]}
     </button>
@@ -81,7 +82,7 @@ function renderQuestions(question, choices) {
     ${choices[3]}
     </button>
   </div>
-  
+  </div>
   `
   document.getElementById('game').append(questionDiv);
 }
