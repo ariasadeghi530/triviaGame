@@ -58,26 +58,26 @@ function shuffleArray(array) {
 // create cards to contain elements and render on page
 function renderQuestions(question, choices) {
   let questionDiv = document.createElement('div');
-  question.class = "card-body"
+  question.class = "card"
   questionDiv.innerHTML = `
   <h5 class="card-title">${question}</h5>
   <div>
-    <button type="button" class="btn btn-light btn-lg btn-block btn-light">
+    <button type="button" class="btn btn-light btn-lg btn-block btn-light text-left">
     ${choices[0]}
     </button>
   </div>
   <div>
-    <button type="button" class="btn btn-primary btn-lg btn-block btn-light">
+    <button type="button" class="btn btn-primary btn-lg btn-block btn-light text-left">
     ${choices[1]}
     </button>
   </div>
   <div>
-    <button type="button" class="btn btn-primary btn-lg btn-block btn-light">
+    <button type="button" class="btn btn-primary btn-lg btn-block btn-light text-left">
     ${choices[2]}
     </button>
   </div>
   <div>
-    <button type="button" class="btn btn-primary btn-lg btn-block btn-light">
+    <button type="button" class="btn btn-primary btn-lg btn-block btn-light text-left">
     ${choices[3]}
     </button>
   </div>
