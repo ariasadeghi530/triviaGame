@@ -9,17 +9,18 @@ let score = 0;
 
 
 
-  fetch('https://opentdb.com/api_category.php')
+fetch('https://opentdb.com/api_category.php')
   .then(r => r.json())
-  .then(({trivia_categories}) => {
-    trivia_categories.forEach( (elem) => {
+  .then(({ trivia_categories }) => {
+    trivia_categories.forEach((elem) => {
+      console.log(elem);
       let promptOpt = document.createElement('a');
-      promptOpt.class = "dropdown-item";
-      promptOpt.href ="#";
+      promptOpt.className = "dropdown-item";
+      promptOpt.href = "#";
       promptOpt.value = elem.id;
       promptOpt.textContent = elem.name;
-      promptWrap.innerHTML = promptOpt
-      document.getElementById('dropdown').append(promptWrap);
+      console.log(promptOpt);
+      document.getElementsByClassName('dropdown-menu')[0].appendChild(promptOpt);
     })
   })
   .catch(e => console.error(e));
@@ -40,8 +41,6 @@ fetch(`https://opentdb.com/api.php?amount=10&category=${category}&type=multiple`
       answers.push(answer);
       choices.push(results[index].correct_answer);
       shuffleArray(choices);
-      console.log(question, choices);
-      console.log(answers)
       renderQuestions(question, choices);
     });
   })
