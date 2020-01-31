@@ -9,6 +9,23 @@ let score = 0;
 
 
 
+  fetch('https://opentdb.com/api_category.php')
+  .then(r => r.json())
+  .then(({trivia_categories}) => {
+    trivia_categories.forEach( (elem) => {
+      let promptOpt = document.createElement('a');
+      promptOpt.class = "dropdown-item";
+      promptOpt.href ="#";
+      promptOpt.value = elem.id;
+      promptOpt.textContent = elem.name;
+      promptWrap.innerHTML = promptOpt
+      document.getElementById('dropdown').append(promptWrap);
+    })
+  })
+  .catch(e => console.error(e));
+
+
+
 // document.getElementById('beginGame').addEventListener('click', event => {
 //   category = document.getElementById('promptChoices').value;
 
@@ -22,9 +39,9 @@ fetch(`https://opentdb.com/api.php?amount=10&category=${category}&type=multiple`
       let answer = results[index].correct_answer;
       answers.push(answer);
       choices.push(results[index].correct_answer);
-      console.log(answer);
       shuffleArray(choices);
       console.log(question, choices);
+      console.log(answers)
       renderQuestions(question, choices);
     });
   })
@@ -42,29 +59,30 @@ function shuffleArray(array) {
 // create cards to contain elements and render on page
 function renderQuestions(question, choices) {
   let questionDiv = document.createElement('div');
-  question.class = "card"
+  question.class = "card-body"
   questionDiv.innerHTML = `
-  <h4>${question}</h4>
+  <h5 class="card-title">${question}</h5>
   <div>
-    <button>
+    <button type="button" class="btn btn-light btn-lg btn-block btn-light">
     ${choices[0]}
     </button>
   </div>
   <div>
-    <button>
+    <button type="button" class="btn btn-primary btn-lg btn-block btn-light">
     ${choices[1]}
     </button>
   </div>
   <div>
-    <button>
+    <button type="button" class="btn btn-primary btn-lg btn-block btn-light">
     ${choices[2]}
     </button>
   </div>
   <div>
-    <button>
+    <button type="button" class="btn btn-primary btn-lg btn-block btn-light">
     ${choices[3]}
     </button>
   </div>
+  
   `
   document.getElementById('game').append(questionDiv);
 }
