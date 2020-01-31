@@ -8,9 +8,11 @@ let answers = [];
 let score = 0;
 
 
+
 // document.getElementById('beginGame').addEventListener('click', event => {
 //   category = document.getElementById('promptChoices').value;
 
+  // get the 10 questions and choices for each 
   fetch(`https://opentdb.com/api.php?amount=10&category=${category}&type=multiple`)
   .then(r => r.json())
   .then(({results}) =>{
