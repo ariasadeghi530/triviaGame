@@ -15,6 +15,7 @@
     />
   </head>
   <body>
+
     <!-- Includes Title and Buttons -->
     <div class="jumbotron">
       <h1>Trivia Game</h1>
@@ -22,48 +23,160 @@
       <!-- Dropdown button -->
       <div class="btn-group">
         <button
+          id="categories"
           type="button"
           class="btn btn-danger dropdown-toggle"
-          data-toggle="dropdown" 
+          data-toggle="dropdown"
           aria-haspopup="true"
           aria-expanded="false"
         >
           General Knowledge
         </button>
         <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <a class="dropdown-item" href="#">Something else here</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Separated link</a>
+          <a class="dropdown-item" href="#" value="9">Action 1</a>
+          <a class="">Another action 2</a>
+          <a class="">Something else here 3</a>
+          <a class="">Something else here 4</a>
+          <a class="">Something else here 5</a>
+          <a class="">Something else here 6</a>
+          <a class="">Something else here 7</a>
+          <a class="">Something else here 8</a>
+          <a class="">Something else here 9</a>
+          <a class="">Something else here 10</a>
         </div>
       </div>
 
-      <!-- Begin Game Button -->
-      <button type="button" class="btn btn-success">Begin Game</button>
+      <!-- Start Game Button -->
+      <button id="startButton" type="button" class="btn btn-success">
+        Start Game
+      </button>
     </div>
 
     <!-- Game Questions and Choices Display -->
     <div id="game">
-    <div class="card">Question 1</div>
-    <div class="card">Question 2</div>
-    <div class="card">Question 3</div>
-    <div class="card">Question 4</div>
-    <div class="card">Question 5</div>
-    <div class="card">Question 6</div>
-    <div class="card">Question 7</div>
-    <div class="card">Question 8</div>
-    <div class="card">Question 9</div>
-    <div class="card">Question 10</div>
+      <div class="card">
+        <h5 class="card-header">Question 1</h5>
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"></p>
+          <button type="button" class="btn btn-primary btn-lg btn-block btn-light">Answer1</button>
+          <button type="button" class="btn btn-primary btn-lg btn-block btn-light">Answer2</button>
+          <button type="button" class="btn btn-primary btn-lg btn-block btn-light">Answer3</button>
+          <button type="button" class="btn btn-primary btn-lg btn-block btn-light">Answer4</button>
+        </div>
+      </div>
+      <div class="card">
+        <h5 class="card-header">Question 2</h5>
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"></p>
+        <button type="button" class="btn btn-primary btn-lg btn-block btn-light">Answer1</button>
+        <button type="button" class="btn btn-primary btn-lg btn-block btn-light">Answer2</button>
+        <button type="button" class="btn btn-primary btn-lg btn-block btn-light">Answer3</button>
+        <button type="button" class="btn btn-primary btn-lg btn-block btn-light">Answer4</button>
+        </div>
+      </div>
+      <div class="card">
+        <h5 class="card-header">Question 3</h5>
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"></p>
+          <button type="button" class="btn btn-primary btn-lg btn-block btn-light">Answer1</button>
+          <button type="button" class="btn btn-primary btn-lg btn-block btn-light">Answer2</button>
+          <button type="button" class="btn btn-primary btn-lg btn-block btn-light">Answer3</button>
+          <button type="button" class="btn btn-primary btn-lg btn-block btn-light">Answer4</button>
+        </div>
+      </div>
+      <div class="card">
+        <h5 class="card-header">Question 4</h5>
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"></p>
+          <button type="button" class="btn btn-primary btn-lg btn-block btn-light">Answer1</button>
+          <button type="button" class="btn btn-primary btn-lg btn-block btn-light">Answer2</button>
+          <button type="button" class="btn btn-primary btn-lg btn-block btn-light">Answer3</button>
+          <button type="button" class="btn btn-primary btn-lg btn-block btn-light">Answer4</button>
+      </div>
+      <div class="card">
+        <h5 class="card-header">Question 5</h5>
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"></p>
+          <button type="button" class="btn btn-primary btn-lg btn-block btn-light">Answer1</button>
+          <button type="button" class="btn btn-primary btn-lg btn-block btn-light">Answer2</button>
+          <button type="button" class="btn btn-primary btn-lg btn-block btn-light">Answer3</button>
+          <button type="button" class="btn btn-primary btn-lg btn-block btn-light">Answer4</button>
+        </div>
+      </div>
+      <div class="card">
+        <h5 class="card-header">Question 6</h5>
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"></p>
+        </div>
+      </div>
+      <div class="card">
+        <h5 class="card-header">Question 7</h5>
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"></p>
+          <button type="button" class="btn btn-primary btn-lg btn-block btn-light">Answer1</button>
+          <button type="button" class="btn btn-primary btn-lg btn-block btn-light">Answer2</button>
+          <button type="button" class="btn btn-primary btn-lg btn-block btn-light">Answer3</button>
+          <button type="button" class="btn btn-primary btn-lg btn-block btn-light">Answer4</button>
+      </div>
+      <div class="card">
+        <h5 class="card-header">Question 8</h5>
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"></p>
+          <button type="button" class="btn btn-primary btn-lg btn-block btn-light">Answer1</button>
+          <button type="button" class="btn btn-primary btn-lg btn-block btn-light">Answer2</button>
+          <button type="button" class="btn btn-primary btn-lg btn-block btn-light">Answer3</button>
+          <button type="button" class="btn btn-primary btn-lg btn-block btn-light">Answer4</button>
+        </div>
+      </div>
+      <div class="card">
+        <h5 class="card-header">Question 9</h5>
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"></p>
+          <button type="button" class="btn btn-primary btn-lg btn-block btn-light">Answer1</button>
+          <button type="button" class="btn btn-primary btn-lg btn-block btn-light">Answer2</button>
+          <button type="button" class="btn btn-primary btn-lg btn-block btn-light">Answer3</button>
+          <button type="button" class="btn btn-primary btn-lg btn-block btn-light">Answer4</button>
+        </div>
+      </div>
+      <div class="card">
+        <h5 class="card-header">Question 10</h5>
+        <div class="card-body">
+          <h5 class="card-title"></h5>
+          <p class="card-text"></p>
+          <button type="button" class="btn btn-primary btn-lg btn-block btn-light">Answer1</button>
+          <button type="button" class="btn btn-primary btn-lg btn-block btn-light">Answer2</button>
+          <button type="button" class="btn btn-primary btn-lg btn-block btn-light">Answer3</button>
+          <button type="button" class="btn btn-primary btn-lg btn-block btn-light">Answer4</button>
+        </div>
+      </div>
     </div>
-
+    
+    <!-- Submit Answers Button -->
+    <button id="submitButton" type="button" class="btn btn-success">  Submit Answers
+          </button>
+        </div>
+        
     <!-- Modal End Game Display -->
 
-    <div tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div
+      class="modal"  
+      id="endModalDisplay"
+      tabindex="-1"
+      role="dialog"
+    >
       <div class="modal-dialog" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Modal title</h5>
+            <h5 class="modal-title">End of Quiz</h5>
             <button
               type="button"
               class="close"
@@ -74,11 +187,14 @@
             </button>
           </div>
           <div class="modal-body">
-            <p>Modal body text goes here.</p>
+            <p>You've completed the quiz! Your score is:</p>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button id="confirmModal" type="button" class="btn btn-primary">
+              OK
+            </button>
             <button
+              id="closeModal"
               type="button"
               class="btn btn-secondary"
               data-dismiss="modal"
@@ -88,7 +204,7 @@
           </div>
         </div>
       </div>
-    </div>
+
 
     <!-- JS Boostrap CDN -->
     <script
@@ -106,5 +222,7 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
+
+    <script src="./assets/app.js"></script>
   </body>
 </html>
